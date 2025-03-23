@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="navBar">
+        <div class="topNav">
+            <div class="logo">
+                <a href="#welcome">BAH <span>Mamadou</span></a>
+            </div>
+            
+            <div class="navItems">
+                <a href="#welcome">Accueil</a>
+                <a href="#about">A Propos</a>
+                <a href="#projects">Projets</a>
+                <a href="#skills">Compétences</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="welcome" id="welcome">
+        <div class="welcomeMain">
+            <div class="welcomeLeft">
+                <h2>
+                    Je suis <span>Mamadou</span>, Développeur en devenir
+                    passionné par le web et le design !
+                </h2>
+                <button>Voir mes projets</button>
+            </div>
+            <div class="welcomeRight">
+                <img src="img/web-designs.jpg" alt="Développement web avec HTML, CSS et JavaScript" id="main-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="text-center">A Propos</h2>
+        <div class="aboutMain">
+    
+            <div class="aboutLeft">
+                <p>
+                    Je m'appelle <span>BAH</span>, passionné par la
+                    création de sites web modernes et interactifs.
+                </p>
+    
+                <p> 
+                    Je suis actuellement étudiant en <span>développement web,</span>
+                    et je cherche à améliorer mes compétences en JavaScript, HTML et CSS.
+                </p>
+    
+                <p>
+                    J'adore transformer mes idées en projets concrets
+                    et expérimenter avec les nouvelles technologies.
+                </p>
+    
+                <button><a href="Documents/CVMamadouBah.pdf" target="_blank">Télécharger mon CV</a></button>
+            </div>
+    
+            <div class="aboutRight">
+                <img src="img/bah.png" alt="Ma photo de profil" id="portfolio">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="projectsMain">
+            <div class="projectsHead">
+                <h2 class="text-center">Mes Projets</h2>
+            </div>
+    
+            <div class="projectsControl">
+                <div class="projectsBox">
+                    <div class="recBox">
+                            <p>
+                                Conception d'un jeu d'échec 
+                                très populaire et interactif.
+                            </p>
+                            <h3>#HTML, #CSS, #JS</h3>
+                            <button>Voir</button>
+                    </div>
+                </div>
+                <div class="projectsBox">
+                    <div class="recBox">
+                            <p>
+                                Un mini-jeu interactif en JavaScript
+                                qui utilise des événements DOM.
+                            </p>
+                            <h3>#HTML, #CSS, #JS</h3>
+                            <button>Voir</button>
+                    </div>
+                </div>
+                <div class="projectsBox">
+                    <div class="recBox">
+                            <p>
+                                Conception d'un Portfolio personnel en ligne
+                                publié sur github.com.
+                            </p>
+                            <h3>#HTML, #CSS, #JS</h3>
+                            <button>Voir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="text-center">Mes Compétences</h2>
+
+        <div class="container">
+            <!-- start soft Skills -->
+            <div class="softSkills">
+                <h3>Soft Skills</h3>
+
+                <div class="skill">
+                    <p>Gestion de projet</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <p>Résolution de problème</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <p>Adaptabilité</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <p>Prise de décision</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- end soft skills -->
+
+            <!-- start hard skills -->
+            <div class="hardSkills">
+                <h3>Hard Skills</h3>
+        
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;"></div>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+    
+                <div class="skill">
+                    <p>VS Code</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 98%;"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- end hard skills -->
+    
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-form">
+            <h2>Vous avez un <span>projet en tête ?</span></h2>
+            <p>N'hésitez pas à me <span>contacter</span></p>
+    
+            <form id="myForm">
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="prenom">Votre prénom</label>
+                        <input type="text" id="prenom" placeholder="Mamadou" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="nom">Votre nom</label>
+                        <input type="text" id="nom" placeholder="BAH" required>
+                    </div>
+                </div>
+    
+                <div class="input-field">
+                    <label for="sujet">Votre sujet</label>
+                    <input type="text" id="sujet" placeholder="Développement d'un site vitrine" required>
+                </div>
+    
+                <div class="input-field">
+                    <textarea id="message" placeholder="Écrivez votre message ici !" required></textarea>
+                </div>
+    
+                <button type="submit">Envoyer</button>
+            </form>
+            <p id="messageConfirmation"></p>
+        </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <section class="footer">
+        <div class="footerLeft">
+            <p>Designed by <span>Mamadou</span> with HTML CSS JS</p>
+        </div>
+        <div class="footerRight">
+            <p>Tous droits réservés 2025</p>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
